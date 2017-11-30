@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="290dp"
+    android:minHeight="290dp"
+    android:background="@drawable/redeem_back"
+    android:orientation="vertical"
+    android:maxHeight="290dp"
+    android:maxWidth="270dp"
+    android:minWidth="270dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_marginTop="22dp"
+        android:id="@+id/redeemMoneyText"
+        fontPath="fonts/ProximaNovaBold.otf"
+        android:text="Withdraw $84"
+        android:textColor="#1e67ac"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        fontPath="fonts/ProximaNovaBold.otf"
+        android:textColor="#0c0054"
+        android:gravity="center_horizontal"
+        android:text="Please, fill the information field\nbelow and click the REDEEM button"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Min withdraw is $100"
+        android:textSize="12sp"
+        android:textColor="#da0f0f"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/switcher"
+        app:tabIndicatorColor="#00897f"
+        app:tabSelectedTextColor="#1e67ac"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="160dp"
+        android:orientation="horizontal"
+        android:layout_height="30dp" />
+
+    <EditText
+        android:maxLength="100"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:id="@+id/emailText"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#0f3345"
+        android:hint="Paypal email address"
+        android:textColorHint="#a1a1a1"
+        android:textSize="16sp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:src="@drawable/redeem_dialog"
+        android:layout_marginTop="12dp"
+        android:id="@+id/redeemBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
